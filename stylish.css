@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+    font-family: "poppins",sans-serif;
+
+}
+
+html{
+    font-size: 60%;
+}
+body{
+    background-color:white;
+    color: #316ff6;
+}
+.tophead{
+padding: 2rem 10%;
+background: lightblue;
+display:flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+width: 100%;
+overflow-x: hidden;
+z-index: 1000;
+}
+
+.logo{
+    font-size: 3rem;
+    color:#316ff6;
+    font-weight:800;
+    transition:  0.3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
+.navbar a{
+    font-size: 1.8rem;
+    color:#316ff6;
+    margin-left: 4rem;
+    font-weight: 700;
+    transition:0.3s ease ;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover{
+    color: #316ff6;
+    border-bottom: 1px solid #316ff6;
+}
+.custom-btn{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background-color: #316ff6;
+    color: white;
+    border: none;
+   
+}
+.custom-btn:hover{
+transform: scale(1.05);
+}
+section{
+    min-height: 100vh;
+padding: 10rem 15%;
+}
+.apropos{
+    display: flex;
+ align-items: center;
+   justify-content: center;
+    gap: 15rem;
+    margin-bottom: 1rem;
+}
+.content-de-propos{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   text-align: right;
+}
+.content-de-propos h1{
+    font-size: 8rem;
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+.content-de-propos h3{
+    margin: 0;
+    font-size: 4rem;
+}
+.content-de-propos p{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: left;
+}
+.moi{
+    width: 40vh;
+    border-radius: 40%;
+    box-shadow: 0 0 25px #316ff6;
+    transition: 0.4s ease-in-out ;
+}
+.moi:hover{
+    box-shadow: 0 0 25px #316ff6,
+                0 0 50px  #316ff6,
+                0 0 100px #316ff6;
+}
+.social-icons a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+font-size: 3rem;
+padding: 1rem;
+background: transparent;
+border: 2px solid #316ff6;
+border-radius: 50%;
+color: #316ff6;
+margin: 3rem 0.5rem;
+transition: 0.3s ease-in-out;
+}
+.social-icons a:hover{
+
+    background-color: lightblue;
+    transform : scale(1.2)translateY(-5px);
+    box-shadow: 0 0 25PX #316ff6;
+}
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #316ff6;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    background-color: lightblue;
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 45%;
+    box-shadow: 0 0 2px 1px white;
+    border-radius: 5px;
+}
+
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #316ff6;
+    border-radius: 50%;
+    top: 15px;
+    z-index: 1;
+    
+}
+
+
+.timeline-item.left::before {
+    left: -10px;
+}
+
+
+.timeline-item.right::before {
+    right: -10px; 
+}
+
+.timeline-item.left {
+  
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 55%;
+}
+
+.timeline-date {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #316ff6;
+}
+
+.timeline-content {
+    font-size: 1.6rem;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+    color: #316ff6;
+}
+.contact-container{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    
+}
+.contact-left-title h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #316ff6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-left button{
+    display: flex;
+    align-items:center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #316ff6;
+    gap:10px;
+border: none;
+border-radius: 50px;
+background-color: lightblue;
+}
+.phone{
+    font-weight: 600;
+    font-size: medium;
+    margin-right: 5px;
+}
+.tele{
+    width: 50px;
+}
+
+
+#parcours {
+    margin-bottom: 10px; 
+}
+
+#contact {
+    margin-top: 0; 
+}
+textarea.contact-inputs {
+    height: 200px; 
+    resize: none; 
+    border-radius: 10%;
+    width: 200px;
+}
+input.contact-inputs{
+    border-radius: 10%;
+    height:30px;
+border: 1px solid;
+width: 200px;
+}
+.ricala{
+    border-radius: 40%;
+    width: 400px;
+}
